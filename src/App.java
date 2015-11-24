@@ -18,9 +18,7 @@ public class App {
 				return "Redirecting to /words...";
 			});
 			
-			get("/words", (req, res) -> {
-				return new ModelAndView(null, "/views/words/index.ftl");
-			}, freeMarkerEngine);
+			WordsController wordsController = new WordsController(freeMarkerEngine);
 			
 	}
 	

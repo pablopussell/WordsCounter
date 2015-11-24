@@ -3,13 +3,16 @@ import java.util.ArrayList;
 public class WordsRepository {
 	
 	ArrayList<String> Words = new ArrayList<String>();
+	ArrayList<String> words = new ArrayList<String>();
 	
 	public String[] pickRandom(int numberOfWordsToPick) {
-		String[] words = new String[numberOfWordsToPick];
-		for (int i = 0; i < numberOfWordsToPick; i++) {
-			words[i] = Words.get((int)(Math.random()*(Words.size())));
+		/*for (int i = 0; i < numberOfWordsToPick; i++) {
+			words[i] = Words.get((int)(Math.random()*Words.size()));
 		}
-		return words;
+		return words;*/
+		while (words.size()< numberOfWordsToPick) {
+			if (!words.contains(arg0)) {
+		}
 	}
 	
 	public void add(String[] wordsToBeAdded) {
